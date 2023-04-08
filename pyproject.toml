@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "rapi"
+version = "0.1.0"
+description = "A small script to generate RSS feeds from Wordpress API"
+authors = ["Michael Vieira <contact+rapi@mvieira.fr>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+include = [
+    {path = "src/rapi"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+feedgen = "^0.9.0"
+httpx = "^0.23.3"
+pyyaml = "^6.0"
+pydantic = "^1.10.7"
+beautifulsoup4 = "^4.12.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+ruff = "^0.0.261"
+
+[tool.poetry.scripts]
+rapi = 'rapi:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

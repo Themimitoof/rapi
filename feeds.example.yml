@@ -1,0 +1,7 @@
+destination: feeds
+
+websites:
+  - url: https://www.example.com
+    export_formats:
+      - rss
+      - atom

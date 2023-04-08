@@ -1,0 +1,5 @@
+feeds/
+feeds.yml
+.DS_Store
+*.pyi
+*.pyc
